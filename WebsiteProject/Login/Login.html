@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="Login">
+        <div class="container">
+            <div class="row row-backgroundLogin">
+                <div class="col-backgroundLogin center">
+                    <img src="./imgs/logo.png" alt="" width="70%" height="70%">
+                </div>
+                <div class="col-loginPanal">
+                    <div class="container">
+                        <div class="rowLogin center">
+                            <div class="colForm">
+                                <h3 class="loginTitle">
+                                    Login
+                                </h3>
+                                <form action="" class="LoginForm" id="Login">
+                                    <div class="email">
+                                        <input type="email" id="email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="pass">
+                                        <input type="password" name="pass" id="password" placeholder="Password">
+                                    </div>
+                                    <div class="forgetPass">
+                                        forget your <a href="../FogetPassword/ForgetPassword.html">password</a>?
+                                    </div>
+                                    <div class="submitBtn">
+                                        <button type="button" onclick="loginUser()">Login </button>
+                                        <p style="color: black; margin-top: 10px;"> Don't have an account ?
+                                           <a href="../Register/Register.html">
+                                                <b style="color: #ff4654; cursor: pointer;" id="reg">Register </b>
+                                            </a> 
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js">
+    </script>
+</body>
+
+</html>

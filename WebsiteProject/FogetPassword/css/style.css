@@ -1,0 +1,109 @@
+* {
+    margin: auto;
+    padding: 0px;
+    color: white;
+    font-family: 'FF Mark W05', sans-serif;
+    ;
+}
+
+body {
+    width: 100%;
+    height: 57em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, #FF4654, #101A24);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ForgetPassword {
+    width: 70%;
+    height: 70%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.col-backgroundForgetPassword {
+    width: 70%;
+    height: 100%;
+    background-image: url('../imgs/backgroundLogin.jpg');
+    background-size: cover;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.col-ForgetPasswordPanal {
+    width: 30%;
+    height: 100%;
+    background-color: #fcfcfc;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.col-ForgetPasswordPanal h3 {
+    color: #040c30;
+}
+
+.rowForgetPassword {
+    height: 100%;
+}
+
+.ForgetPasswordTitle {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ForgetPasswordForm .email {
+    margin: 15px 0px;
+}
+
+.ForgetPasswordForm input {
+    padding: 15px 40px;
+    color: black;
+    box-sizing: border-box;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.ForgetPasswordForm input:focus {
+    border: 1px solid black;
+}
+
+.ForgetPasswordForm .submitBtn {
+    text-align: center;
+}
+
+.ForgetPasswordForm .submitBtn button {
+    padding: 15px 40px;
+    color: black;
+    box-sizing: border-box;
+    display: block;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #FF4654;
+    text-decoration: none;
+    transition: all ease 0.25s;
+    border-radius: 5px;
+}
+
+.ForgetPasswordForm .submitBtn button:hover {
+    background-color: white;
+    color: #FF4654;
+}
