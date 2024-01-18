@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="imgs/logo.png" />
+
+</head>
+
+<body>
+    <div class="Register">
+        <div class="container">
+            <div class="row row-backgroundRegister">
+                <div class="col-backgroundRegister center">
+                    <img src="./imgs/logo.png" alt="" width="70%" height="70%">
+                </div>
+                <div class="col-RegisterPanal">
+                    <div class="container">
+                        <div class="rowRegister center">
+                            <div class="colForm">
+                                <h3 class="RegisterTitle">
+                                    Register
+                                </h3>
+                                <form action="" class="RegisterForm" id="Register">
+                                    <div class="email">
+                                        <input type="email" id="email" name="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="pass">
+                                        <input type="password" name="pass" id="password" placeholder="Password" required>
+                                    </div>
+                                    <div class="pass">
+                                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" required>
+                                    </div>
+                                    <div class="phone">
+
+                                        <input type="" name="phone" id="phone" placeholder="Phone" required>
+                                    </div>
+                                    <div class="gender">
+                                        <h4>Gender</h4>
+                                        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                                        <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+                                    </div>
+                                    <div class="submitBtn">
+                                        <button type="button" onclick="registerUser()">Register</button>
+                                    </div>
+                                    <p style="color: black; margin-top: 10px;">already have an account ?
+                                        <a href="../Login/Login.html"> <b style="color: #ff4654; cursor: pointer;   " id="lg">Login </a></b></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="popup">
+                <img src="imgs/OIF.jpg" alt="sds" />
+                <h2>thank you !</h2>
+                <p>your information are registering successfully</p>
+                <button onclick="move()" type="submit">Ok</button>
+            </div>
+
+            <div class="popup2" id="popup2">
+                <img src="imgs/Cross-mark-icon-in-red-color-on-transparent-background-PNG.png" alt="sds" />
+                <h2>Wait !</h2>
+                <p>you enter not vaild email </p>
+                <button onclick="closePopup4()" type="submit">Ok</button>
+            </div>
+
+            <div class="popup2" id="popup4">
+                <img src="imgs/Cross-mark-icon-in-red-color-on-transparent-background-PNG.png" alt="sds" />
+                <h2>Wait !</h2>
+                <p>your passwords are not matching </p>
+                <button onclick="closepop4()" type="submit">Ok</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

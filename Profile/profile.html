@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-NavList">
+                    <a href="" class="logo"><img src="./imgs/logo.png" alt="" width="3%"></a>
+                    <a href="../home/index.html"><b>Back</b></a>
+                </div>
+                <div class="col-LogoutBtn">
+                    <a href="../Login/Login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End of nav -->
+
+    <header class="profile-container">
+        <div class="profile-header">
+            <h1>User Profile</h1>
+        </div>
+        <div class="profile-content">
+            <div class="profile-image">
+                <img src="./imgs/Omen.png" alt=" Profile Picture">
+            </div>
+            <div class="profile-details" style="margin-top: 25px; margin-left: 20px;">
+                <p id="mail">User_email :   </p>
+                <p id="mobile">User_Mobile : </p>
+                <p id="gender">User_Gender : </p>
+            </div>
+        </div>
+    </header>
+
+
+
+    <script>
+        var loggedInUserData = localStorage.getItem('loggedInUser');
+        if (loggedInUserData) {
+            var userData = JSON.parse(loggedInUserData);
+
+
+            document.getElementById("mail").innerHTML += " " + userData.email;
+            document.getElementById("mobile").innerHTML += " " + userData.phone;
+            document.getElementById("gender").innerHTML += " " + userData.gender
+        } else {
+            alert('No user logged in.');
+        }
+    </script>
+
+</body>
+
+</html>
